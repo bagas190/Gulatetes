@@ -1,0 +1,35 @@
+<!-- Tabel Riwayat Gula -->
+<div class="container my-5" id="riwayat">
+  <h5 class="mb-3">📋 Riwayat Gula</h5>
+  <div class="table-responsive table-riwayat">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Tanggal</th>
+          <th>Produksi (ton)</th>
+          <th>Pengeluaran (ton)</th>
+          <th>Stok Akhir (ton)</th>
+        </tr>
+      </thead>
+      <tbody id="riwayatGulaBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Tabel Riwayat Tetes -->
+<div class="container my-5" id="Grafik">
+  <h5 class="mb-3">📋 Riwayat Tetes</h5>
+  <div class="table-responsive table-riwayat">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Tanggal</th>
+          <th>Produksi (ton)</th>
+          <th>Pengeluaran (ton)</th>
+          <th>Stok Akhir (ton)</th>
+        </tr>
+      </thead>
+      <tbody id="riwayatTetesBody"></tbody>
+    </table>
+  </div>
+</div>
