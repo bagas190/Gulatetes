@@ -887,7 +887,7 @@ body.scrolled .back-to-top {
     <!-- Waktu terakhir diperbarui -->
     <div class="d-flex justify-content-center">
       <p class="lead animate-text" style="font-size: 1.2rem; text-align: center; margin-bottom: 1rem;">
-        ⏱️ Persediaan: Senin, 21 April 2025
+        ⏱️ Persediaan: Senin, 18 Mei 2025
       </p>
     </div>
 
@@ -899,10 +899,9 @@ body.scrolled .back-to-top {
         <div class="total-card scroll-anim" style="max-width: 300px; margin: auto; padding: 0.8rem;">
           <div class="inner-card gula" style="color: black; padding: 0.8rem; border-radius: 10px; background-color: #f8f9fa;">
             <h6 style="color: black; font-size: 0.9rem;">Total Gula</h6>
-            <h2 id="totalGula" style="font-size: 2rem; color: #0056b3;">200 ton</h2>
-            <p class="subtext" style="font-size: 0.9rem; color: black;">📦 Total saat ini</p>
-            <p style="font-size: 1rem; margin: 6px 0; color: #0056b3;">🏭Persediaan Gudang: 150 ton</p>
-            <p style="font-size: 1rem; margin: 6px 0; color: #0056b3;">Persediaan Belum Terjual: 50 ton</p>
+            <h2 id="totalGula" style="font-size: 2rem; color: #0056b3;">15572,493 ton</h2>
+            <p style="font-size: 1rem; margin: 6px 0; color: #131414;">🏭free stock: 11341,993 ton</p>
+            <p style="font-size: 1rem; margin: 6px 0; color: #0d0d0d;">Milik pedagang digudang: 4230,500 ton</p>
           </div>
         </div>
       </div>
@@ -912,10 +911,9 @@ body.scrolled .back-to-top {
         <div class="total-card scroll-anim" style="max-width: 300px; margin: auto; padding: 0.8rem;">
           <div class="inner-card tetes" style="color: black; padding: 0.8rem; border-radius: 10px; background-color: #f8f9fa;">
             <h6 style="color: black; font-size: 0.9rem;">Total Tetes</h6>
-            <h2 id="totalTetes" style="font-size: 2rem; color: #0056b3;">-- ton</h2>
-            <p class="subtext" style="font-size: 0.9rem; color: black;">🛢️ Total saat ini</p>
-            <p style="font-size: 1rem; margin: 6px 0; color: #0056b3;">🏭 Persediaan Gudang: 100 ton</p>
-            <p style="font-size: 1rem; margin: 6px 0; color: #0056b3;">Persediaan Belum Terjual: 30 ton</p>
+            <h2 id="totalTetes" style="font-size: 2rem; color: #0056b3;">7206,615 ton</h2>
+            <p style="font-size: 1rem; margin: 6px 0; color: #000000;">free stock: 4827,075 ton</p>
+            <p style="font-size: 1rem; margin: 6px 0; color: #050606;">Milik pedagang di PG: 2379,540 ton </p>
           </div>
         </div>
       </div>
@@ -926,21 +924,7 @@ body.scrolled .back-to-top {
 </div>
 
 
-<!-- Kartu Jumlah Saat Ini -->
-<div class="container my-5"id="gula">
-  <div class="row g-4 justify-content-center">
-    <div class="col-md-6">
-      <div class="card shadow-sm">
-        <div class="card-header text-center">Jumlah Gula</div>
-        <div class="card-body text-center">
-          <h3 id="gulaKg">-- ton</h3>
-          <p class="text-muted"><span id="gulaTon">--</span> ton</p>
-          <p class="fw-bold" id="gulaChange"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- Tabel Hasil Produksi -->
 <div class="container my-5">
@@ -952,12 +936,12 @@ body.scrolled .back-to-top {
         <table class="table table-bordered table-striped">
           <thead class="table-warning">
             <tr><th colspan="2" class="text-center">Gula</th></tr>
-            <tr><th>Hari Ini</th><th>S/D Hari Ini</th></tr>
+            <tr><th>18-05-2025</th><th>S/D Hari Ini</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td id="produksiGulaHariIni">-</td>
-              <td id="produksiGulaTotal">-</td>
+              <td id="produksiGulaHariIni">108 ton</td>
+              <td id="produksiGulaTotal">11801,000 ton</td>
             </tr>
           </tbody>
         </table>
@@ -971,12 +955,12 @@ body.scrolled .back-to-top {
         <table class="table table-bordered table-striped">
           <thead class="table-danger">
             <tr><th colspan="2" class="text-center">Gula</th></tr>
-            <tr><th>Hari Ini</th><th>S/D Hari Ini</th></tr>
+            <tr><th>-</th><th>S/D Hari Ini</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td id="pengeluaranGulaHariIni">-</td>
-              <td id="pengeluaranGulaTotal">-</td>
+              <td id="pengeluaranGulaHariIni">---</td>
+              <td id="pengeluaranGulaTotal">7760,656</td>
             </tr>
           </tbody>
         </table>
@@ -985,21 +969,6 @@ body.scrolled .back-to-top {
   </div>
 </div>
 
-<!-- card tetes -->
-<div class="container my-5" id="produksi">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="card shadow-sm">
-        <div class="card-header text-center">Jumlah Tetes</div>
-        <div class="card-body text-center">
-          <h3 id="tetesLiter">-- ton</h3>
-          <p class="text-muted"><span id="tetesKL">--</span> ton</p>
-          <p class="fw-bold" id="tetesChange"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Tabel Pengeluaran -->
 <div class="container my-5" id="pengeluaran">
@@ -1015,7 +984,7 @@ body.scrolled .back-to-top {
           <tbody>
             <tr>
               <td id="produksiTetesHariIni">-</td>
-              <td id="produksiTetesTotal">-</td>
+              <td id="produksiTetesTotal">11522,243 ton</td>
             </tr>
           </tbody>
         </table>
@@ -1027,12 +996,12 @@ body.scrolled .back-to-top {
         <table class="table table-bordered table-striped">
           <thead class="table-danger">
             <tr><th colspan="2" class="text-center">Tetes</th></tr>
-            <tr><th>Hari Ini</th><th>S/D Hari Ini</th></tr>
+            <tr><th>19-05-2025</th><th>S/D Hari Ini</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td id="pengeluaranTetesHariIni">-</td>
-              <td id="pengeluaranTetesTotal">-</td>
+              <td id="pengeluaranTetesHariIni">39,890 ton</td>
+              <td id="pengeluaranTetesTotal">5405,622 ton</td>
             </tr>
           </tbody>
         </table>
